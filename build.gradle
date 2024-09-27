@@ -34,13 +34,16 @@ minecraft {
 }
 
 repositories {
-    maven { url = "http://maven.cil.li/" }
+    maven { url "http://maven.cil.li/" }
+    maven { url "https://cursemaven.com" }
 }
 dependencies {
-    compile "li.cil.oc:OpenComputers:MC1.12.2-1.7.5+:api"
-    compile "li.cil.oc:OpenComputers:MC1.12.2-1.7.5+:javadoc"
+    //compile "li.cil.oc:OpenComputers:MC1.12.2-1.7.5+:api"
+    //compile "li.cil.oc:OpenComputers:MC1.12.2-1.7.5+:javadoc"
+    //compile files("./lib/ICBM-classic-1.12.2-4.0.1b75.jar")
+    implementation "curse.maven:opencomputers-223008:5741939"
+    implementation "curse.maven:icbm-244451:5452674"
     compile files("./lib/industrialcraft-2-2.8.196-ex112-api.jar")
-    compile files("./lib/ICBM-classic-1.12.2-4.0.1b75.jar")
 }
 
 dependencies {
